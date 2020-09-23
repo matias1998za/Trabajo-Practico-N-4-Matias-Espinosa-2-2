@@ -11,7 +11,16 @@ if F==1:
     Cant=Cantcera/10
     print("La cantidad de cajas necesarias son:", Cant)
     Precio=int(input("Ingresar el precio por caja"))
-    Preciototal=Precio*Cant
-    print("El precio total es", Preciototal)
+    subtotal=Precio*Cant
+    print("El subtotal es", subtotal)
+    D=int(input("Ingrese forma de pago: 1 si es efectivo(-10%), 2 si es credito"))
+    if D==1:
+        TotalD= subtotal *0,10
+        print("El total es", TotalD)
+    else:
+        print("El total es", subtotal)
+
 else:
     print("No hay clientes")
+
+
